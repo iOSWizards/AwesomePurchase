@@ -8,10 +8,11 @@
 import StoreKit
 
 public typealias ProductIdentifier = String
+public typealias ProductRequestCompletionHandler = (_ product: SKProduct?) -> Void
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> Void
 public typealias ProductPurchasedCompletionHandler = (_ success: Bool, _ receipt: String?) -> Void
 
-public class AwesomeAwesomeIAP: NSObject {
+public class AwesomeIAPHelper: NSObject {
     
     fileprivate let productIdentifiers: Set<ProductIdentifier>
     fileprivate var purchasedProductIdentifiers = Set<ProductIdentifier>()
@@ -22,7 +23,7 @@ public class AwesomeAwesomeIAP: NSObject {
     public init(productIds: Set<ProductIdentifier>) {
         productIdentifiers = productIds
         
-        print("AwesomeAwesomeIAP refreshed with \(productIds.count) products:")
+        print("AwesomeIAPHelper refreshed with \(productIds.count) products:")
         for productIdentifier in productIds {
             let purchased = UserDefaults.standard.bool(forKey: productIdentifier)
             if purchased {
@@ -45,14 +46,14 @@ public class AwesomeAwesomeIAP: NSObject {
 
 // MARK: - StoreKit API
 
-extension AwesomeAwesomeIAP {
+extension AwesomeIAPHelper {
     
-    public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
+    public func requestProducts(completion: @escaping ProductsRequestCompletionHandler) {
         //cancel previous request
         clearRequestAndHandler()
         
         //setup completion handler
-        productsRequestCompletionHandler = completionHandler
+        productsRequestCompletionHandler = completion
         
         //perform the request
         productsRequest = SKProductsRequest(productIdentifiers: productIdentifiers)
@@ -60,14 +61,8 @@ extension AwesomeAwesomeIAP {
         productsRequest?.start()
     }
     
-    public func product(withIdentifier identifier: String, completion:@escaping((_ product: SKProduct?) -> Void)) {
-        guard let store = AwesomePurchase.store else {
-            print("Store is not configured: Make sure you run AwesomePurchase.setupStore()")
-            completion(nil)
-            return
-        }
-        
-        store.requestProducts { (_, products) in
+    public func product(withIdentifier identifier: String, completion:@escaping ProductRequestCompletionHandler) {
+        requestProducts { (_, products) in
             if let products = products {
                 for product in products where product.productIdentifier == identifier {
                     completion(product)
@@ -104,7 +99,7 @@ extension AwesomeAwesomeIAP {
 
 // MARK: - SKProductsRequestDelegate
 
-extension AwesomeAwesomeIAP: SKProductsRequestDelegate {
+extension AwesomeIAPHelper: SKProductsRequestDelegate {
     
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         let products = response.products
@@ -134,7 +129,7 @@ extension AwesomeAwesomeIAP: SKProductsRequestDelegate {
 
 // MARK: - SKPaymentTransactionObserver
 
-extension AwesomeAwesomeIAP: SKPaymentTransactionObserver {
+extension AwesomeIAPHelper: SKPaymentTransactionObserver {
     
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
