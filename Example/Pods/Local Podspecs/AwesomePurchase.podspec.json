@@ -1,22 +1,22 @@
 {
   "name": "AwesomePurchase",
   "version": "0.1.0",
-  "summary": "A short description of AwesomePurchase.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/evandro@itsdayoff.com/AwesomePurchase",
+  "summary": "IAP Helper.",
+  "description": "IAP Helper.",
+  "homepage": "https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "evandro@itsdayoff.com": "evandro@itsdayoff.com"
+    "evandro@mindvalley.com": "evandro@mindvalley.com"
   },
   "source": {
-    "git": "https://github.com/evandro@itsdayoff.com/AwesomePurchase.git",
+    "git": "https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "AwesomePurchase/Classes/**/*"
 }

@@ -1,11 +1,14 @@
 use_frameworks!
 
+def available_pods
+    pod 'AwesomePurchase', :path => '../'
+end
+
+# Pod for different targets
 target 'AwesomePurchase_Example' do
-  pod 'AwesomePurchase', :path => '../'
+    available_pods
+end
 
-  target 'AwesomePurchase_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'AwesomePurchase_Tests' do
+    available_pods
 end

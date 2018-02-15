@@ -1,8 +1,16 @@
+//
+//  AwesomeIAPHelperTests.swift
+//  AwesomePurchase_Example
+//
+//  Created by Evandro Harrison Hoffmann on 2/15/18.
+//  Copyright © 2018 CocoaPods. All rights reserved.
+//
+
 import UIKit
 import XCTest
 import AwesomePurchase
 
-class Tests: XCTestCase {
+class AwesomeIAPHelperTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -19,11 +27,5 @@ class Tests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
+

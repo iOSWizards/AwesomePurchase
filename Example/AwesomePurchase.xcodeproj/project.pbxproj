@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		03BDB79B5AB636C35D8D022A /* Pods_AwesomePurchase_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C73B304DD552B3A23A3F6EA /* Pods_AwesomePurchase_Tests.framework */; };
+		0AC6B7BB20354F85001E0425 /* AwesomeIAPHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B7B720354E84001E0425 /* AwesomeIAPHelperTests.swift */; };
+		0AC6B7BC20354F85001E0425 /* AwesomePurchaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B7B920354EA2001E0425 /* AwesomePurchaseTests.swift */; };
 		4619B886C083C359D3EB3640 /* Pods_AwesomePurchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFA4CDD3715EA8068EFDCD1 /* Pods_AwesomePurchase_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AC6B7B720354E84001E0425 /* AwesomeIAPHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeIAPHelperTests.swift; sourceTree = "<group>"; };
+		0AC6B7B920354EA2001E0425 /* AwesomePurchaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomePurchaseTests.swift; sourceTree = "<group>"; };
 		0CFA4CDD3715EA8068EFDCD1 /* Pods_AwesomePurchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomePurchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FF860D8AAEFDA2D5751D4B3 /* AwesomePurchase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AwesomePurchase.podspec; path = ../AwesomePurchase.podspec; sourceTree = "<group>"; };
-		515C933DA5BCFA8A24CEFDC8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3FF860D8AAEFDA2D5751D4B3 /* AwesomePurchase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AwesomePurchase.podspec; path = ../AwesomePurchase.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		515C933DA5BCFA8A24CEFDC8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AwesomePurchase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomePurchase_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +43,11 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AwesomePurchase_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomePurchase_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8C73B304DD552B3A23A3F6EA /* Pods_AwesomePurchase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomePurchase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C66C42C7AD9780FB3BC64DA /* Pods-AwesomePurchase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomePurchase_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomePurchase_Example/Pods-AwesomePurchase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B464FC3DF7DECBAFB8926728 /* Pods-AwesomePurchase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomePurchase_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomePurchase_Tests/Pods-AwesomePurchase_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E573FDFE59B8CEC905E331FB /* Pods-AwesomePurchase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomePurchase_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomePurchase_Tests/Pods-AwesomePurchase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA48C748F32029FFA9F713FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EA48C748F32029FFA9F713FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F93DC5B53124D20428E53977 /* Pods-AwesomePurchase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomePurchase_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomePurchase_Example/Pods-AwesomePurchase_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +128,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				0AC6B7B920354EA2001E0425 /* AwesomePurchaseTests.swift */,
+				0AC6B7B720354E84001E0425 /* AwesomeIAPHelperTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -215,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 496E7TU5N4;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -354,9 +358,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AwesomePurchase_Tests/Pods-AwesomePurchase_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AwesomePurchase/AwesomePurchase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AwesomePurchase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,7 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				0AC6B7BC20354F85001E0425 /* AwesomePurchaseTests.swift in Sources */,
+				0AC6B7BB20354F85001E0425 /* AwesomeIAPHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +525,7 @@
 			baseConfigurationReference = 9C66C42C7AD9780FB3BC64DA /* Pods-AwesomePurchase_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				INFOPLIST_FILE = AwesomePurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +541,7 @@
 			baseConfigurationReference = F93DC5B53124D20428E53977 /* Pods-AwesomePurchase_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				INFOPLIST_FILE = AwesomePurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
