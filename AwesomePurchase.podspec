@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 IAP Helper.
                        DESC
 
-  s.homepage         = 'https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase'
+  s.homepage         = 'https://github.com/iOSWizards/AwesomePurchase'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'evandro@mindvalley.com' => 'evandro@mindvalley.com' }
-  s.source           = { :git => 'https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase.git', :tag => s.version.to_s }
+  s.author           = { 'evandro@itsdayoff.com' => 'evandro@itsdayoff.com' }
+  s.source           = { :git => 'https://github.com/iOSWizards/AwesomePurchase.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

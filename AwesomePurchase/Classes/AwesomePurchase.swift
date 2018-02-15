@@ -12,7 +12,6 @@ public let AwesomeIAPFailedRequestNotification = NSNotification.Name(rawValue: "
 public let AwesomeIAPDeliverPurchaseNotification = NSNotification.Name(rawValue: "AwesomeIAPDeliverPurchaseNotification")
 public let AwesomeIAPPurchasedNotification = NSNotification.Name(rawValue: "AwesomeIAPPurchasedNotification")
 
-
 public struct AwesomePurchase {
     
     public static var store: AwesomeIAPHelper?
