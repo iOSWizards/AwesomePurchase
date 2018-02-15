@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AwesomePurchase_Example' do
+  pod 'AwesomePurchase', :path => '../'
+
+  target 'AwesomePurchase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
