@@ -1,0 +1,22 @@
+{
+  "name": "AwesomePurchase",
+  "version": "0.1.0",
+  "summary": "A short description of AwesomePurchase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/evandro@itsdayoff.com/AwesomePurchase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "evandro@itsdayoff.com": "evandro@itsdayoff.com"
+  },
+  "source": {
+    "git": "https://github.com/evandro@itsdayoff.com/AwesomePurchase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AwesomePurchase/Classes/**/*"
+}

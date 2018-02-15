@@ -1,0 +1,6 @@
+framework module AwesomePurchase {
+  umbrella header "AwesomePurchase-umbrella.h"
+
+  export *
+  module * { export * }
+}

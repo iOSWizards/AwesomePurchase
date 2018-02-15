@@ -1,0 +1,16 @@
+PODS:
+  - AwesomePurchase (0.1.0)
+
+DEPENDENCIES:
+  - AwesomePurchase (from `../`)
+
+EXTERNAL SOURCES:
+  AwesomePurchase:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AwesomePurchase: b437ebc5db893bbbe2928bc23a9df3d81373d140
+
+PODFILE CHECKSUM: be461fa5af562b140430e275ead6a0f36f5e9c77
+
+COCOAPODS: 1.4.0
