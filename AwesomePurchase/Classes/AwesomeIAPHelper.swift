@@ -40,6 +40,7 @@ public class AwesomeIAPHelper: NSObject {
     
     deinit {
         SKPaymentQueue.default().remove(self)
+        clearRequestAndHandler()
     }
     
 }
@@ -121,6 +122,7 @@ extension AwesomeIAPHelper: SKProductsRequestDelegate {
     }
     
     private func clearRequestAndHandler() {
+        productsRequest?.delegate = nil
         productsRequest?.cancel()
         productsRequest = nil
         productsRequestCompletionHandler = nil
