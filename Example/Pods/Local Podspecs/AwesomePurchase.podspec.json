@@ -1,6 +1,6 @@
 {
   "name": "AwesomePurchase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "IAP Helper.",
   "description": "IAP Helper.",
   "homepage": "https://github.com/iOSWizards/AwesomePurchase",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iOSWizards/AwesomePurchase.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"

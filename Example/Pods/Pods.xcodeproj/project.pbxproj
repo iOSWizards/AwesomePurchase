@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D92C09BC682E5C914F64EC511CACE7 /* RenewalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D3F5D1C0BFE8266DCCDFA6F13A826 /* RenewalInfo.swift */; };
-		21191B4591EFF115D513CA7C0C907712 /* AwesomePurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553799BE4C48406E1E0C804FC533980C /* AwesomePurchase.swift */; };
-		2E220B6D42F23AB035DC6BCF78659B41 /* AwesomePurchaseReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A2135CFE4722195FAC206C605C6B4 /* AwesomePurchaseReceipt.swift */; };
-		3458DEE0643A6C784738427303CC60BE /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EAD969CE5587043A8D6032E1488E9 /* Receipt.swift */; };
 		35D299DA8D6DE2E2683DCE5E848645A0 /* Pods-AwesomePurchase_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4D81B58F4DDBE10CF33AFC4297F861 /* Pods-AwesomePurchase_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A09622F5466BFDC1CD000A9805FA562 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71055F80007EA66D920A0DAB043D3B /* CodableExtensions.swift */; };
-		40098E11F1E17B6FC2B16D22BDB5AC99 /* AwesomePurchase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32641E5488B898689CCFB14CB3C708F7 /* AwesomePurchase-dummy.m */; };
-		5537AD9A855713F5A956961517C77011 /* AwesomePurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D03626DAD0CA187795FEBCE0C3B144 /* AwesomePurchaseStore.swift */; };
+		3993A25FB84CFA127F869EEB4F56106B /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5D7268FEF8E4AC4B4B60157A05A28 /* Receipt.swift */; };
+		39D5E2BD328EBEF5AFD3418E4160AD9E /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C745779FE67846E2590C9645BE5FA2 /* DictionaryExtensions.swift */; };
+		3FAF0F0BB2AC0B2CCC1544DA01B105D2 /* AwesomePurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C3753878439FB777A9BDF92AAED0 /* AwesomePurchaseStore.swift */; };
+		518A6E5956F27EDB542FF97B64AFFF08 /* AwesomePurchaseSubscriptionStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB8B282561C74A6C31588549740901 /* AwesomePurchaseSubscriptionStatusProtocol.swift */; };
 		577D8CD1A9D4760E1CCEC87275564007 /* Pods-AwesomePurchase_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4481DAA5E803AA099E7CD843D77B11A /* Pods-AwesomePurchase_Tests-dummy.m */; };
-		7B073AE7252FC3D43BD1E785155763FE /* AwesomePurchase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B28B3077D01733CE79C6D303B5886A7 /* AwesomePurchase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1486472A32A3F6036744A71F9F19F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6D8E103A8677ACFEB877ED119AE8C2D2 /* AwesomePurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76983F3946257E48734EA89BE17A8527 /* AwesomePurchase.swift */; };
+		7BDF194B3623ED1DA00675974349845B /* ReceiptInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A233178BFD7FD42788B8DD0E5B9921D6 /* ReceiptInfo.swift */; };
+		8138F928D9A2843ECFC231384281FBF3 /* ReceiptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879187A9BF602213F70B93B3AA38570 /* ReceiptResponse.swift */; };
+		84A3A020FD38BAF8050D9117362235A2 /* AwesomePurchase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB58E8DF39A9CD9856170D62548AB0 /* AwesomePurchase-dummy.m */; };
 		944FFCDE0A09E961A5372D52886F9EFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		951F1A3B224DF82D00769202 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951F1A3A224DF82D00769202 /* DictionaryExtensions.swift */; };
-		953B4847224EA50C007895FA /* ProductIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B4846224EA50C007895FA /* ProductIdentifierExtensions.swift */; };
-		953B484C224EABC7007895FA /* AwesomePurchaseSubscriptionStatusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B484A224EABC7007895FA /* AwesomePurchaseSubscriptionStatusProtocol.swift */; };
-		953B484D224EABC7007895FA /* AwesomePurchaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B484B224EABC7007895FA /* AwesomePurchaseProtocol.swift */; };
-		A4C29F5245744F0B6BE4B4AFE64666A0 /* ReceiptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8B6BA316EA15B66A534E7C6780A0E /* ReceiptResponse.swift */; };
 		C070952ACA052787FCF351C84229AFE9 /* Pods-AwesomePurchase_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7677E66E20D80C188996878051EDD064 /* Pods-AwesomePurchase_Example-dummy.m */; };
+		C5BE759E2D6459E78A3CF812D064633E /* AwesomePurchaseReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DC0577F954530D69704F3F20B507E8 /* AwesomePurchaseReceipt.swift */; };
 		C7D01E46A33985462FEA20813F9826FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		CA853E7736CE41A8419B11AEF60345FE /* Pods-AwesomePurchase_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69BB0ED3502413229029C99DFB059B85 /* Pods-AwesomePurchase_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D70C0AAE4DFA3D4B8DE2DF9CDDF92BDB /* ReceiptInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED47913EDF34250790C8144E6D6526 /* ReceiptInfo.swift */; };
-		F87B51E32A92A81AF5B8E1EF8B904A82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		CF131A593EEF9D90A9C335D0238EDB90 /* RenewalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F836BFE6D22CB9286A185A9ACC09B /* RenewalInfo.swift */; };
+		DF1AD2F971CB28F11ABF701E00BB5A1F /* AwesomePurchaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C1DCFFA72BA0A7414C71F5A9E9CCC /* AwesomePurchaseProtocol.swift */; };
+		EE1A4BE2878B5BA455F940CC9833D28B /* ProductIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A1A7BFF106FB83FE37CD2A415AF4 /* ProductIdentifierExtensions.swift */; };
+		EE2987CECF0B9903AA8E80D41F3EFA89 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264CB3A82965E11BF83C986A2935653 /* CodableExtensions.swift */; };
+		F2EF5C842238A416DC135592294E5E33 /* AwesomePurchase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA4100E7647C90FADD5C15B753B62B1 /* AwesomePurchase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,61 +35,61 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AE92810C47E3DAD97921AAF7E132256;
+			remoteGlobalIDString = 3087A07F6CAF2A5272B2F021E2CD1797;
 			remoteInfo = AwesomePurchase;
 		};
 		A2F6972739D20B0D592CC885A1ECE7A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AE92810C47E3DAD97921AAF7E132256;
+			remoteGlobalIDString = 3087A07F6CAF2A5272B2F021E2CD1797;
 			remoteInfo = AwesomePurchase;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05F3DAD31F6C766D3D240B8046E7E9FF /* AwesomePurchase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomePurchase-prefix.pch"; sourceTree = "<group>"; };
-		1410AABAE1E09E5ACCEFB039C8179294 /* Pods_AwesomePurchase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomePurchase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0977CE116B3ADC722A5A89E94DA591BB /* AwesomePurchase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AwesomePurchase.modulemap; sourceTree = "<group>"; };
+		1410AABAE1E09E5ACCEFB039C8179294 /* Pods_AwesomePurchase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomePurchase_Tests.framework; path = "Pods-AwesomePurchase_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CB8B282561C74A6C31588549740901 /* AwesomePurchaseSubscriptionStatusProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AwesomePurchaseSubscriptionStatusProtocol.swift; sourceTree = "<group>"; };
 		21F917E342510BF7A72F9620335261CD /* Pods-AwesomePurchase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomePurchase_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		229A2135CFE4722195FAC206C605C6B4 /* AwesomePurchaseReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchaseReceipt.swift; path = AwesomePurchase/Classes/AwesomePurchaseReceipt.swift; sourceTree = "<group>"; };
-		2BED47913EDF34250790C8144E6D6526 /* ReceiptInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReceiptInfo.swift; sourceTree = "<group>"; };
-		2FF8B6BA316EA15B66A534E7C6780A0E /* ReceiptResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReceiptResponse.swift; sourceTree = "<group>"; };
-		32641E5488B898689CCFB14CB3C708F7 /* AwesomePurchase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomePurchase-dummy.m"; sourceTree = "<group>"; };
-		3B28B3077D01733CE79C6D303B5886A7 /* AwesomePurchase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomePurchase-umbrella.h"; sourceTree = "<group>"; };
 		3B6C2730AD1DEA3790FF8CD2D7FA0F92 /* Pods-AwesomePurchase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomePurchase_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3FBB58E8DF39A9CD9856170D62548AB0 /* AwesomePurchase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomePurchase-dummy.m"; sourceTree = "<group>"; };
 		44184915F6AFC76A88A6252F2CB096A6 /* Pods-AwesomePurchase_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomePurchase_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4927981B6CDE0233CFDA852A13063B9A /* Pods-AwesomePurchase_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomePurchase_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4B71055F80007EA66D920A0DAB043D3B /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
-		4C3BF3B36C1350BEB9AD2182DF165578 /* AwesomePurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomePurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3BF3B36C1350BEB9AD2182DF165578 /* AwesomePurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AwesomePurchase.framework; path = AwesomePurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B54F778D787FA63BFC5C520EB7050F /* Pods-AwesomePurchase_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomePurchase_Example-Info.plist"; sourceTree = "<group>"; };
-		52D03626DAD0CA187795FEBCE0C3B144 /* AwesomePurchaseStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchaseStore.swift; path = AwesomePurchase/Classes/AwesomePurchaseStore.swift; sourceTree = "<group>"; };
-		553799BE4C48406E1E0C804FC533980C /* AwesomePurchase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchase.swift; path = AwesomePurchase/Classes/AwesomePurchase.swift; sourceTree = "<group>"; };
 		5B4D81B58F4DDBE10CF33AFC4297F861 /* Pods-AwesomePurchase_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomePurchase_Example-umbrella.h"; sourceTree = "<group>"; };
 		69BB0ED3502413229029C99DFB059B85 /* Pods-AwesomePurchase_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomePurchase_Tests-umbrella.h"; sourceTree = "<group>"; };
 		70970E7BA8A1C91C20179C4C88FFF118 /* Pods-AwesomePurchase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomePurchase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7264CB3A82965E11BF83C986A2935653 /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		7677E66E20D80C188996878051EDD064 /* Pods-AwesomePurchase_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomePurchase_Example-dummy.m"; sourceTree = "<group>"; };
+		76983F3946257E48734EA89BE17A8527 /* AwesomePurchase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchase.swift; path = AwesomePurchase/Classes/AwesomePurchase.swift; sourceTree = "<group>"; };
+		7943C3753878439FB777A9BDF92AAED0 /* AwesomePurchaseStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchaseStore.swift; path = AwesomePurchase/Classes/AwesomePurchaseStore.swift; sourceTree = "<group>"; };
 		829EFE1F250419EA3BFBB601E40C562E /* Pods-AwesomePurchase_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomePurchase_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8388B06581A76A457142E4009CF3FE0F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		86C64E3F767702DD3AF0EAD9D3850AFC /* Pods-AwesomePurchase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomePurchase_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9409E1D60F143DD16986E0B85E3FC712 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		951F1A3A224DF82D00769202 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
-		953B4846224EA50C007895FA /* ProductIdentifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductIdentifierExtensions.swift; sourceTree = "<group>"; };
-		953B484A224EABC7007895FA /* AwesomePurchaseSubscriptionStatusProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePurchaseSubscriptionStatusProtocol.swift; sourceTree = "<group>"; };
-		953B484B224EABC7007895FA /* AwesomePurchaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePurchaseProtocol.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B1CF92A692B626D916006CDD44F2AF9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		88C745779FE67846E2590C9645BE5FA2 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		965C1DCFFA72BA0A7414C71F5A9E9CCC /* AwesomePurchaseProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AwesomePurchaseProtocol.swift; sourceTree = "<group>"; };
+		96B33A2D72DE5FCE407993EA3B1FE7C1 /* AwesomePurchase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomePurchase-prefix.pch"; sourceTree = "<group>"; };
+		9CD5D7268FEF8E4AC4B4B60157A05A28 /* Receipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1DC0577F954530D69704F3F20B507E8 /* AwesomePurchaseReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AwesomePurchaseReceipt.swift; path = AwesomePurchase/Classes/AwesomePurchaseReceipt.swift; sourceTree = "<group>"; };
+		A233178BFD7FD42788B8DD0E5B9921D6 /* ReceiptInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReceiptInfo.swift; sourceTree = "<group>"; };
+		A879187A9BF602213F70B93B3AA38570 /* ReceiptResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReceiptResponse.swift; sourceTree = "<group>"; };
+		B016A1A7BFF106FB83FE37CD2A415AF4 /* ProductIdentifierExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductIdentifierExtensions.swift; sourceTree = "<group>"; };
+		B04F6059DF83459B81EED79BE6F288A7 /* AwesomePurchase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomePurchase.xcconfig; sourceTree = "<group>"; };
 		B2C8CAFFE7959F31044C340D5C21BBDB /* Pods-AwesomePurchase_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomePurchase_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B3718DB0AF23D4AAEF3855DB1FDFE58E /* Pods-AwesomePurchase_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AwesomePurchase_Tests.modulemap"; sourceTree = "<group>"; };
 		B4481DAA5E803AA099E7CD843D77B11A /* Pods-AwesomePurchase_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomePurchase_Tests-dummy.m"; sourceTree = "<group>"; };
-		C09C34CD3627DF0E8D35721CC0EDC18D /* AwesomePurchase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomePurchase.xcconfig; sourceTree = "<group>"; };
-		C168559D033D8073A87D62ED8E32F120 /* Pods_AwesomePurchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomePurchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA4100E7647C90FADD5C15B753B62B1 /* AwesomePurchase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomePurchase-umbrella.h"; sourceTree = "<group>"; };
+		C026FAF58BA078152C89D7ECDCB1FBCF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C168559D033D8073A87D62ED8E32F120 /* Pods_AwesomePurchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomePurchase_Example.framework; path = "Pods-AwesomePurchase_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32298FEA38AF901A02E79D44DCE1C11 /* Pods-AwesomePurchase_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AwesomePurchase_Example.modulemap"; sourceTree = "<group>"; };
-		C7A42B13F33DD53A98D6619E17D22E65 /* AwesomePurchase.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AwesomePurchase.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D93D3F5D1C0BFE8266DCCDFA6F13A826 /* RenewalInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RenewalInfo.swift; sourceTree = "<group>"; };
+		DAD50DAABD976CC22AE1058924383368 /* AwesomePurchase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AwesomePurchase-Info.plist"; sourceTree = "<group>"; };
 		DD988D4161C876C01923FB9DD0C78DC4 /* Pods-AwesomePurchase_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomePurchase_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F07693F3A63307AFF8EBDB2272C7F015 /* AwesomePurchase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AwesomePurchase.modulemap; sourceTree = "<group>"; };
-		F48EAD969CE5587043A8D6032E1488E9 /* Receipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
-		F9699CE50BD5300A20C1458128A284EC /* AwesomePurchase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AwesomePurchase-Info.plist"; sourceTree = "<group>"; };
+		E224F8C3C1F5F8927B555F882CCBC848 /* AwesomePurchase.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AwesomePurchase.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F65F836BFE6D22CB9286A185A9ACC09B /* RenewalInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RenewalInfo.swift; sourceTree = "<group>"; };
 		F97D1551CF77B332BD00D627086C5529 /* Pods-AwesomePurchase_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomePurchase_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FDD900786058A876C2EBBDB0521CC250 /* Pods-AwesomePurchase_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomePurchase_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,11 +103,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2307F26D61FDE5750D340E135813C56 /* Frameworks */ = {
+		ACC92D7227A0C9B7111752021DC6E6A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87B51E32A92A81AF5B8E1EF8B904A82 /* Foundation.framework in Frameworks */,
+				5C1486472A32A3F6036744A71F9F19F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,18 +122,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		223BBFCC2ABADB49EBD90AAA772F3E7A /* Support Files */ = {
+		03586CD274CD72CCA1C2BC133CD8BB86 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F07693F3A63307AFF8EBDB2272C7F015 /* AwesomePurchase.modulemap */,
-				C09C34CD3627DF0E8D35721CC0EDC18D /* AwesomePurchase.xcconfig */,
-				32641E5488B898689CCFB14CB3C708F7 /* AwesomePurchase-dummy.m */,
-				F9699CE50BD5300A20C1458128A284EC /* AwesomePurchase-Info.plist */,
-				05F3DAD31F6C766D3D240B8046E7E9FF /* AwesomePurchase-prefix.pch */,
-				3B28B3077D01733CE79C6D303B5886A7 /* AwesomePurchase-umbrella.h */,
+				965C1DCFFA72BA0A7414C71F5A9E9CCC /* AwesomePurchaseProtocol.swift */,
+				18CB8B282561C74A6C31588549740901 /* AwesomePurchaseSubscriptionStatusProtocol.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AwesomePurchase";
+			name = Protocols;
+			path = AwesomePurchase/Classes/Protocols;
+			sourceTree = "<group>";
+		};
+		4F23BB418384E2C759F031A9A1B99886 /* AwesomePurchase */ = {
+			isa = PBXGroup;
+			children = (
+				76983F3946257E48734EA89BE17A8527 /* AwesomePurchase.swift */,
+				A1DC0577F954530D69704F3F20B507E8 /* AwesomePurchaseReceipt.swift */,
+				7943C3753878439FB777A9BDF92AAED0 /* AwesomePurchaseStore.swift */,
+				A6850E6656CE41B97B6912FBEACDF88A /* Extensions */,
+				DEFDDFA94626867E466D945D92EF3F44 /* Models */,
+				98BBBC5C9655F05BE69BE637C6B3651F /* Pod */,
+				03586CD274CD72CCA1C2BC133CD8BB86 /* Protocols */,
+				E7FAC16239DBD264720E12F39932F50B /* Support Files */,
+			);
+			name = AwesomePurchase;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		61E79A42372AB992835C6B6C8C643193 /* Pods-AwesomePurchase_Tests */ = {
@@ -156,40 +168,17 @@
 		64517AB4FFEECB83D0D3C3AB5D979EB6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B0D693312F5B4176504074D7D825036F /* AwesomePurchase */,
+				4F23BB418384E2C759F031A9A1B99886 /* AwesomePurchase */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6C1E0DDAB9607601B20A1A3D9707C7F5 /* Extensions */ = {
+		98BBBC5C9655F05BE69BE637C6B3651F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				951F1A3A224DF82D00769202 /* DictionaryExtensions.swift */,
-				4B71055F80007EA66D920A0DAB043D3B /* CodableExtensions.swift */,
-				953B4846224EA50C007895FA /* ProductIdentifierExtensions.swift */,
-			);
-			name = Extensions;
-			path = AwesomePurchase/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		8D5930A8DC34DEA0587E4D9294EA7E4A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F48EAD969CE5587043A8D6032E1488E9 /* Receipt.swift */,
-				2BED47913EDF34250790C8144E6D6526 /* ReceiptInfo.swift */,
-				2FF8B6BA316EA15B66A534E7C6780A0E /* ReceiptResponse.swift */,
-				D93D3F5D1C0BFE8266DCCDFA6F13A826 /* RenewalInfo.swift */,
-			);
-			name = Models;
-			path = AwesomePurchase/Classes/Models;
-			sourceTree = "<group>";
-		};
-		97857120DD16F39CC852EBDB2A878AC5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C7A42B13F33DD53A98D6619E17D22E65 /* AwesomePurchase.podspec */,
-				9409E1D60F143DD16986E0B85E3FC712 /* LICENSE */,
-				B1CF92A692B626D916006CDD44F2AF9E /* README.md */,
+				E224F8C3C1F5F8927B555F882CCBC848 /* AwesomePurchase.podspec */,
+				C026FAF58BA078152C89D7ECDCB1FBCF /* LICENSE */,
+				8388B06581A76A457142E4009CF3FE0F /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -202,30 +191,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A873E887CDA0EF214AAC013E44AC55F8 /* Protocols */ = {
+		A6850E6656CE41B97B6912FBEACDF88A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				953B484B224EABC7007895FA /* AwesomePurchaseProtocol.swift */,
-				953B484A224EABC7007895FA /* AwesomePurchaseSubscriptionStatusProtocol.swift */,
+				7264CB3A82965E11BF83C986A2935653 /* CodableExtensions.swift */,
+				88C745779FE67846E2590C9645BE5FA2 /* DictionaryExtensions.swift */,
+				B016A1A7BFF106FB83FE37CD2A415AF4 /* ProductIdentifierExtensions.swift */,
 			);
-			name = Protocols;
-			path = AwesomePurchase/Classes/Protocols;
-			sourceTree = "<group>";
-		};
-		B0D693312F5B4176504074D7D825036F /* AwesomePurchase */ = {
-			isa = PBXGroup;
-			children = (
-				553799BE4C48406E1E0C804FC533980C /* AwesomePurchase.swift */,
-				52D03626DAD0CA187795FEBCE0C3B144 /* AwesomePurchaseStore.swift */,
-				229A2135CFE4722195FAC206C605C6B4 /* AwesomePurchaseReceipt.swift */,
-				A873E887CDA0EF214AAC013E44AC55F8 /* Protocols */,
-				6C1E0DDAB9607601B20A1A3D9707C7F5 /* Extensions */,
-				8D5930A8DC34DEA0587E4D9294EA7E4A /* Models */,
-				97857120DD16F39CC852EBDB2A878AC5 /* Pod */,
-				223BBFCC2ABADB49EBD90AAA772F3E7A /* Support Files */,
-			);
-			name = AwesomePurchase;
-			path = ../..;
+			name = Extensions;
+			path = AwesomePurchase/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		C6073B6CF7484B7C1D2237A4772EB39E /* Targets Support Files */ = {
@@ -273,6 +247,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DEFDDFA94626867E466D945D92EF3F44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CD5D7268FEF8E4AC4B4B60157A05A28 /* Receipt.swift */,
+				A233178BFD7FD42788B8DD0E5B9921D6 /* ReceiptInfo.swift */,
+				A879187A9BF602213F70B93B3AA38570 /* ReceiptResponse.swift */,
+				F65F836BFE6D22CB9286A185A9ACC09B /* RenewalInfo.swift */,
+			);
+			name = Models;
+			path = AwesomePurchase/Classes/Models;
+			sourceTree = "<group>";
+		};
+		E7FAC16239DBD264720E12F39932F50B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0977CE116B3ADC722A5A89E94DA591BB /* AwesomePurchase.modulemap */,
+				B04F6059DF83459B81EED79BE6F288A7 /* AwesomePurchase.xcconfig */,
+				3FBB58E8DF39A9CD9856170D62548AB0 /* AwesomePurchase-dummy.m */,
+				DAD50DAABD976CC22AE1058924383368 /* AwesomePurchase-Info.plist */,
+				96B33A2D72DE5FCE407993EA3B1FE7C1 /* AwesomePurchase-prefix.pch */,
+				BFA4100E7647C90FADD5C15B753B62B1 /* AwesomePurchase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AwesomePurchase";
+			sourceTree = "<group>";
+		};
 		EF98F2387CB513E4D0A2E3620EB00D74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,25 +302,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D14CE33DFE3D8758D35A554FC31DEDA7 /* Headers */ = {
+		FA1DA2B9AA5E974CDFFAC3A4D2BCF11A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B073AE7252FC3D43BD1E785155763FE /* AwesomePurchase-umbrella.h in Headers */,
+				F2EF5C842238A416DC135592294E5E33 /* AwesomePurchase-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2AE92810C47E3DAD97921AAF7E132256 /* AwesomePurchase */ = {
+		3087A07F6CAF2A5272B2F021E2CD1797 /* AwesomePurchase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 297DB436D1E1D10C0F5E3D408A482F97 /* Build configuration list for PBXNativeTarget "AwesomePurchase" */;
+			buildConfigurationList = 4174B0BE697D54BB7ECE9589C07253D3 /* Build configuration list for PBXNativeTarget "AwesomePurchase" */;
 			buildPhases = (
-				D14CE33DFE3D8758D35A554FC31DEDA7 /* Headers */,
-				1A03284D1F7E89B38C2EB64D0D7DE134 /* Sources */,
-				A2307F26D61FDE5750D340E135813C56 /* Frameworks */,
-				B032E45AB87C8342484435E11064B9E6 /* Resources */,
+				FA1DA2B9AA5E974CDFFAC3A4D2BCF11A /* Headers */,
+				CF20DB15B7865CE26167121D42FCBC1A /* Sources */,
+				ACC92D7227A0C9B7111752021DC6E6A7 /* Frameworks */,
+				5B191E1A2C1FD9D623ED33C299477C33 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -383,7 +383,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -391,7 +390,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AE92810C47E3DAD97921AAF7E132256 /* AwesomePurchase */,
+				3087A07F6CAF2A5272B2F021E2CD1797 /* AwesomePurchase */,
 				E94711D3CE7B9E5ECB884C5A1EA604BC /* Pods-AwesomePurchase_Example */,
 				6CABB2BA76020CA75597FD5546032B35 /* Pods-AwesomePurchase_Tests */,
 			);
@@ -406,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B032E45AB87C8342484435E11064B9E6 /* Resources */ = {
+		5B191E1A2C1FD9D623ED33C299477C33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,26 +422,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A03284D1F7E89B38C2EB64D0D7DE134 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				953B484D224EABC7007895FA /* AwesomePurchaseProtocol.swift in Sources */,
-				5537AD9A855713F5A956961517C77011 /* AwesomePurchaseStore.swift in Sources */,
-				953B484C224EABC7007895FA /* AwesomePurchaseSubscriptionStatusProtocol.swift in Sources */,
-				40098E11F1E17B6FC2B16D22BDB5AC99 /* AwesomePurchase-dummy.m in Sources */,
-				21191B4591EFF115D513CA7C0C907712 /* AwesomePurchase.swift in Sources */,
-				2E220B6D42F23AB035DC6BCF78659B41 /* AwesomePurchaseReceipt.swift in Sources */,
-				3A09622F5466BFDC1CD000A9805FA562 /* CodableExtensions.swift in Sources */,
-				3458DEE0643A6C784738427303CC60BE /* Receipt.swift in Sources */,
-				D70C0AAE4DFA3D4B8DE2DF9CDDF92BDB /* ReceiptInfo.swift in Sources */,
-				A4C29F5245744F0B6BE4B4AFE64666A0 /* ReceiptResponse.swift in Sources */,
-				03D92C09BC682E5C914F64EC511CACE7 /* RenewalInfo.swift in Sources */,
-				953B4847224EA50C007895FA /* ProductIdentifierExtensions.swift in Sources */,
-				951F1A3B224DF82D00769202 /* DictionaryExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		32D954F29753C8A2BAE2E58C717D2847 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,27 +438,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF20DB15B7865CE26167121D42FCBC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3A020FD38BAF8050D9117362235A2 /* AwesomePurchase-dummy.m in Sources */,
+				6D8E103A8677ACFEB877ED119AE8C2D2 /* AwesomePurchase.swift in Sources */,
+				DF1AD2F971CB28F11ABF701E00BB5A1F /* AwesomePurchaseProtocol.swift in Sources */,
+				C5BE759E2D6459E78A3CF812D064633E /* AwesomePurchaseReceipt.swift in Sources */,
+				3FAF0F0BB2AC0B2CCC1544DA01B105D2 /* AwesomePurchaseStore.swift in Sources */,
+				518A6E5956F27EDB542FF97B64AFFF08 /* AwesomePurchaseSubscriptionStatusProtocol.swift in Sources */,
+				EE2987CECF0B9903AA8E80D41F3EFA89 /* CodableExtensions.swift in Sources */,
+				39D5E2BD328EBEF5AFD3418E4160AD9E /* DictionaryExtensions.swift in Sources */,
+				EE1A4BE2878B5BA455F940CC9833D28B /* ProductIdentifierExtensions.swift in Sources */,
+				3993A25FB84CFA127F869EEB4F56106B /* Receipt.swift in Sources */,
+				7BDF194B3623ED1DA00675974349845B /* ReceiptInfo.swift in Sources */,
+				8138F928D9A2843ECFC231384281FBF3 /* ReceiptResponse.swift in Sources */,
+				CF131A593EEF9D90A9C335D0238EDB90 /* RenewalInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		C275F302A767B5A6F17C8A2D7A201AF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AwesomePurchase;
-			target = 2AE92810C47E3DAD97921AAF7E132256 /* AwesomePurchase */;
+			target = 3087A07F6CAF2A5272B2F021E2CD1797 /* AwesomePurchase */;
 			targetProxy = 62A16909B9717026F3D82C1014A4A558 /* PBXContainerItemProxy */;
 		};
 		D163FC1A76F26A98151B319CF04B5629 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AwesomePurchase;
-			target = 2AE92810C47E3DAD97921AAF7E132256 /* AwesomePurchase */;
+			target = 3087A07F6CAF2A5272B2F021E2CD1797 /* AwesomePurchase */;
 			targetProxy = A2F6972739D20B0D592CC885A1ECE7A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3695B513F9BFE90FB25B4E7E05FE4BA7 /* Release */ = {
+		1A2591D7D58E94BF6F33C694E8EEE702 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09C34CD3627DF0E8D35721CC0EDC18D /* AwesomePurchase.xcconfig */;
+			baseConfigurationReference = B04F6059DF83459B81EED79BE6F288A7 /* AwesomePurchase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AwesomePurchase/AwesomePurchase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AwesomePurchase/AwesomePurchase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AwesomePurchase/AwesomePurchase.modulemap";
+				PRODUCT_MODULE_NAME = AwesomePurchase;
+				PRODUCT_NAME = AwesomePurchase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		412A4AFE682D35CF1FCE5FA40A4A6204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04F6059DF83459B81EED79BE6F288A7 /* AwesomePurchase.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -542,37 +572,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8DD2C7E7E5F215DBDA5997D3F16ED6BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09C34CD3627DF0E8D35721CC0EDC18D /* AwesomePurchase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AwesomePurchase/AwesomePurchase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AwesomePurchase/AwesomePurchase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AwesomePurchase/AwesomePurchase.modulemap";
-				PRODUCT_MODULE_NAME = AwesomePurchase;
-				PRODUCT_NAME = AwesomePurchase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -791,7 +790,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -800,11 +800,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		297DB436D1E1D10C0F5E3D408A482F97 /* Build configuration list for PBXNativeTarget "AwesomePurchase" */ = {
+		4174B0BE697D54BB7ECE9589C07253D3 /* Build configuration list for PBXNativeTarget "AwesomePurchase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DD2C7E7E5F215DBDA5997D3F16ED6BB /* Debug */,
-				3695B513F9BFE90FB25B4E7E05FE4BA7 /* Release */,
+				1A2591D7D58E94BF6F33C694E8EEE702 /* Debug */,
+				412A4AFE682D35CF1FCE5FA40A4A6204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
