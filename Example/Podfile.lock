@@ -1,16 +1,16 @@
 PODS:
-  - AwesomePurchase (0.1.0)
+  - AwesomePurchase (0.1.1)
 
 DEPENDENCIES:
   - AwesomePurchase (from `../`)
 
 EXTERNAL SOURCES:
   AwesomePurchase:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AwesomePurchase: 2d3ca5ee889a96d4afd0f61e59515ee375b44048
+  AwesomePurchase: 41e3bf35ef55b03470e2a6b4761890c931b69fb3
 
 PODFILE CHECKSUM: b28211c091d0a7ad0ef044c31022ab49cf535e87
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0

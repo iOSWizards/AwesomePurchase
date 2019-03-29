@@ -8,31 +8,42 @@
 
 import StoreKit
 
-public let AwesomeIAPFailedRequestNotification = NSNotification.Name(rawValue: "AwesomeIAPFailedRequestNotification")
-public let AwesomeIAPDeliverPurchaseNotification = NSNotification.Name(rawValue: "AwesomeIAPDeliverPurchaseNotification")
-public let AwesomeIAPPurchasedNotification = NSNotification.Name(rawValue: "AwesomeIAPPurchasedNotification")
+public enum AwesomePurchaseNotification: String {
+    case updatedSubscriptionStatus = "AwesomePurchaseUpdatedSubscriptionStatus"
+    case failedRequest = "AwesomePurchaseFailedRequest"
+    case deliverPurchase = "AwesomePurchaseDeliverPurchase"
+    case purchased = "AwesomePurchasePurchased"
+    
+    public var notification: Notification.Name {
+        return Notification.Name(rawValue: rawValue)
+    }
+}
 
-public struct AwesomePurchase {
+public class AwesomePurchase {
     
-    public static var store: AwesomeIAPHelper?
+    public static var shared: AwesomePurchase = AwesomePurchase()
     
-    public static var productIdentifiers: Set<ProductIdentifier> = []
+    public var store: AwesomePurchaseStore?
+    public var productIdentifiers: Set<ProductIdentifier> = []
+    public var receiptManager: AwesomePurchaseReceipt?
+    public var isProduction: Bool = true
     
-    public static func setupStore(productIds: Set<ProductIdentifier>) {
-        AwesomePurchase.productIdentifiers = productIds
-        store = AwesomeIAPHelper(productIds: AwesomePurchase.productIdentifiers)
+    public static func start(with productIds: Set<ProductIdentifier>, isProduction: Bool = true) {
+        shared.receiptManager = AwesomePurchaseReceipt()
+        shared.isProduction = isProduction
+        shared.setupStore(productIds: productIds)
     }
     
-    public static func resourceNameForProductIdentifier(_ productIdentifier: String) -> String? {
-        return productIdentifier.components(separatedBy: ".").last
+    public func setupStore(productIds: Set<ProductIdentifier>) {
+        productIdentifiers = productIds
+        store = AwesomePurchaseStore(productIds: productIdentifiers)
     }
     
     // MARK: - Requests
     
     public static func product(withIdentifier identifier: String, completion: @escaping ProductRequestCompletionHandler) {
-        guard let store = AwesomePurchase.store else {
-            print("Store is not configured: Make sure you run AwesomePurchase.setupStore()")
-            completion(nil)
+        guard let store = shared.store else {
+            completion(nil, "Store is not configured: Make sure you run AwesomePurchase.setupStore()")
             return
         }
         
@@ -40,9 +51,8 @@ public struct AwesomePurchase {
     }
     
     public static func products(completion: @escaping ProductsRequestCompletionHandler) {
-        guard let store = AwesomePurchase.store else {
-            print("Store is not configured: Make sure you run AwesomePurchase.setupStore()")
-            completion(false, nil)
+        guard let store = shared.store else {
+            completion(false, nil, "Store is not configured: Make sure you run AwesomePurchase.setupStore()")
             return
         }
         
@@ -50,19 +60,18 @@ public struct AwesomePurchase {
     }
     
     public static func purchaseProduct(withIdentifier identifier: String, completion:@escaping ProductPurchasedCompletionHandler) {
-        guard let store = AwesomePurchase.store else {
-            print("Store is not configured: Make sure you run AwesomePurchase.setupStore()")
-            completion(false, nil)
+        guard let store = shared.store else {
+            completion(false, nil, "Store is not configured: Make sure you run AwesomePurchase.setupStore()")
             return
         }
         
-        store.product(withIdentifier: identifier) { (product) in
+        store.product(withIdentifier: identifier) { (product, message) in
             if let product = product {
-                store.buyProduct(product) { (success, receipt) in
-                    completion(true, receipt)
+                store.buyProduct(product) { (success, receipt, message) in
+                    completion(true, receipt, message)
                 }
             } else {
-                completion(false, nil)
+                completion(false, nil, message)
             }
         }
     }

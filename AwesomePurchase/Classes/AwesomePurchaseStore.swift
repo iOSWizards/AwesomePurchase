@@ -8,11 +8,11 @@
 import StoreKit
 
 public typealias ProductIdentifier = String
-public typealias ProductRequestCompletionHandler = (_ product: SKProduct?) -> Void
-public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> Void
-public typealias ProductPurchasedCompletionHandler = (_ success: Bool, _ receipt: String?) -> Void
+public typealias ProductRequestCompletionHandler = (_ product: SKProduct?, _ message: String?) -> Void
+public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?, _ message: String?) -> Void
+public typealias ProductPurchasedCompletionHandler = (_ success: Bool, _ receipt: String?, _ message: String?) -> Void
 
-public class AwesomeIAPHelper: NSObject {
+public class AwesomePurchaseStore: NSObject {
     
     fileprivate let productIdentifiers: Set<ProductIdentifier>
     fileprivate var purchasedProductIdentifiers = Set<ProductIdentifier>()
@@ -47,7 +47,7 @@ public class AwesomeIAPHelper: NSObject {
 
 // MARK: - StoreKit API
 
-extension AwesomeIAPHelper {
+extension AwesomePurchaseStore {
     
     public func requestProducts(completion: @escaping ProductsRequestCompletionHandler) {
         //cancel previous request
@@ -63,15 +63,15 @@ extension AwesomeIAPHelper {
     }
     
     public func product(withIdentifier identifier: String, completion:@escaping ProductRequestCompletionHandler) {
-        requestProducts { (_, products) in
+        requestProducts { (_, products, message) in
             if let products = products {
                 for product in products where product.productIdentifier == identifier {
-                    completion(product)
+                    completion(product, message)
                     return
                 }
             }
             
-            completion(nil)
+            completion(nil, message)
         }
     }
     
@@ -100,13 +100,13 @@ extension AwesomeIAPHelper {
 
 // MARK: - SKProductsRequestDelegate
 
-extension AwesomeIAPHelper: SKProductsRequestDelegate {
+extension AwesomePurchaseStore: SKProductsRequestDelegate {
     
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         let products = response.products
         print("Loaded list of products...")
         print("Found \(products.count) products")
-        productsRequestCompletionHandler?(true, products)
+        productsRequestCompletionHandler?(true, products, nil)
         clearRequestAndHandler()
         
         for p in products {
@@ -117,7 +117,7 @@ extension AwesomeIAPHelper: SKProductsRequestDelegate {
     public func request(_ request: SKRequest, didFailWithError error: Error) {
         print("Failed to load list of products.")
         print("Error: \(error.localizedDescription)")
-        productsRequestCompletionHandler?(false, nil)
+        productsRequestCompletionHandler?(false, nil, error.localizedDescription)
         clearRequestAndHandler()
     }
     
@@ -131,7 +131,7 @@ extension AwesomeIAPHelper: SKProductsRequestDelegate {
 
 // MARK: - SKPaymentTransactionObserver
 
-extension AwesomeIAPHelper: SKPaymentTransactionObserver {
+extension AwesomePurchaseStore: SKPaymentTransactionObserver {
     
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
@@ -148,6 +148,8 @@ extension AwesomeIAPHelper: SKPaymentTransactionObserver {
             case .deferred:
                 break
             case .purchasing:
+                break
+            @unknown default:
                 break
             }
         }
@@ -175,14 +177,14 @@ extension AwesomeIAPHelper: SKPaymentTransactionObserver {
                 let jsonObjectString = receipt.base64EncodedString(options: .init(rawValue: 0))
                 //print("Receipt [\(jsonObjectString)]")
                 
-                NotificationCenter.default.post(name: AwesomeIAPPurchasedNotification, object: jsonObjectString)
+                NotificationCenter.default.post(name: AwesomePurchaseNotification.purchased.notification, object: jsonObjectString)
                 
-                productPurchasedCompletionHandler?(true, jsonObjectString)
+                productPurchasedCompletionHandler?(true, jsonObjectString, nil)
             } else {
-                productPurchasedCompletionHandler?(false, nil)
+                productPurchasedCompletionHandler?(false, nil, "Unable to read receipt.")
             }
         } else {
-            productPurchasedCompletionHandler?(false, nil)
+            productPurchasedCompletionHandler?(false, nil, "Receipt is nil.")
         }
         
         deliverPurchaseNotificationFor(identifier: productIdentifier)
@@ -191,13 +193,13 @@ extension AwesomeIAPHelper: SKPaymentTransactionObserver {
     }
     
     private func fail(transaction: SKPaymentTransaction) {
-        print("failed to purchase product (\(transaction.payment.productIdentifier): \(String(describing: transaction.error?.localizedDescription))")
+        print("failed to purchase product (\(transaction.payment.productIdentifier): \( transaction.error?.localizedDescription ?? "")")
         
         SKPaymentQueue.default().finishTransaction(transaction)
         
-        NotificationCenter.default.post(name: AwesomeIAPFailedRequestNotification, object: nil)
+        NotificationCenter.default.post(name: AwesomePurchaseNotification.failedRequest.notification, object: nil)
         
-        productPurchasedCompletionHandler?(false, nil)
+        productPurchasedCompletionHandler?(false, nil, transaction.error?.localizedDescription)
         clearPurchaseAndHandler()
     }
     
@@ -207,7 +209,7 @@ extension AwesomeIAPHelper: SKPaymentTransactionObserver {
         purchasedProductIdentifiers.insert(identifier)
         UserDefaults.standard.set(true, forKey: identifier)
         UserDefaults.standard.synchronize()
-        NotificationCenter.default.post(name: AwesomeIAPDeliverPurchaseNotification, object: identifier)
+        NotificationCenter.default.post(name: AwesomePurchaseNotification.deliverPurchase.notification, object: identifier)
     }
     
     private func clearPurchaseAndHandler() {

@@ -1,19 +1,19 @@
 {
   "name": "AwesomePurchase",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "IAP Helper.",
   "description": "IAP Helper.",
-  "homepage": "https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase",
+  "homepage": "https://github.com/iOSWizards/AwesomePurchase",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "evandro@mindvalley.com": "evandro@mindvalley.com"
+    "evandro@itsdayoff.com": "evandro@itsdayoff.com"
   },
   "source": {
-    "git": "https://github.com/Mindvalley/Mobile_iOS_Library_AwesomePurchase.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/iOSWizards/AwesomePurchase.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"

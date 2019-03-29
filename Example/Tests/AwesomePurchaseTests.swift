@@ -23,14 +23,14 @@ class AwesomePurchaseTests: XCTestCase {
     }
     
     func testProductsWereSetup() {
-        XCTAssertEqual(AwesomePurchase.productIdentifiers.count, 0)
+        XCTAssertEqual(AwesomePurchase.shared.productIdentifiers.count, 0)
         
-        AwesomePurchase.setupStore(productIds: ["identifier1", "identifier2"])
+        AwesomePurchase.shared.setupStore(productIds: ["identifier1", "identifier2"])
         
-        XCTAssertEqual(AwesomePurchase.productIdentifiers.count, 2)
+        XCTAssertEqual(AwesomePurchase.shared.productIdentifiers.count, 2)
     }
     
     func testResourceNameForIdentifierReturnsLastComponent() {
-        XCTAssertEqual(AwesomePurchase.resourceNameForProductIdentifier("com.mindvalley.productIdentifier"), "productIdentifier")
+        XCTAssertEqual("com.mindvalley.productIdentifier".resourceName, "productIdentifier")
     }
 }
