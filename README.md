@@ -106,6 +106,18 @@ class AwesomePurchaseHelper: AwesomePurchaseSubscriptionProtocol {
 }
 ```
 
+### Subscription Status Update Protocol
+
+In order to update your view according to Subscription status update, implement the `AwesomePurchaseSubscriptionStatusProtocol`.
+
+```swift
+extension YourView: AwesomePurchaseSubscriptionStatusProtocol {
+    func updatedSubscriptionStatus() {
+        // update UI
+    }
+}
+```
+
 ## License
 
 AwesomePurchase is available under the MIT license. See the LICENSE file for more info.
