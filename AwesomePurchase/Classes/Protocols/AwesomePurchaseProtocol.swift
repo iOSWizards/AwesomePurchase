@@ -8,12 +8,13 @@
 import Foundation
 import StoreKit
 
-public protocol AwesomePurchaseProtocol {
+public protocol AwesomePurchaseSubscriptionProtocol {
     var products: [SKProduct] {get set}
+    var appStoreSecret: String {get}
     func receiptConfirmed(isValid: Bool)
 }
 
-extension AwesomePurchaseProtocol {
+extension AwesomePurchaseSubscriptionProtocol {
     
     public func updateProducts(response: ((_ products: [SKProduct]) -> Void)? = nil) {
         if products.count > 0 {
@@ -61,7 +62,17 @@ extension AwesomePurchaseProtocol {
     }
     
     public func confirmReceipt(receipt: String?, completion: @escaping (Bool) -> Void) {
-        AwesomePurchase.shared.receiptManager?.confirmReceipt(receipt: receipt, appStoreSecret: "d36434e7bb364e92a73736fbefe1e616", completion: completion)
+        AwesomePurchase.shared.receiptManager?.confirmReceipt(receipt: receipt, appStoreSecret: appStoreSecret, completion: completion)
     }
     
+    public static var isSubscribed: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "isSubscribed")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isSubscribed")
+            NotificationCenter.default.post(name: AwesomePurchaseNotification.updatedSubscriptionStatus.notification, object: newValue)
+            print("Subscription status updated: \(newValue)")
+        }
+    }
 }

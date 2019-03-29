@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - iOS 9 or Higher
-- Swift 4
+- Swift 5.0
 
 ## Installation
 
@@ -24,7 +24,87 @@ pod "AwesomePurchase", git: 'https://github.com/iOSWizards/AwesomePurchase', tag
 ```
 ## Usage
 
-Import with cocoapods and be happy. :)
+### Initiating Store
+
+```swift
+AwesomePurchase.start(with: ["identifier1", "identifier2", ...])
+```
+
+**Test Environment**
+
+```swift
+AwesomePurchase.start(with: ["identifier1", "identifier2", ...], isProduction: false)
+```
+
+### Requesting Products
+
+**Single Product**
+
+```swift
+AwesomePurchase.shared.product(withIdentifier: "PRODUCT IDENTIFIER") { (product, message) in
+    // any further action
+}
+```
+
+**All Available Products**
+
+```swift
+AwesomePurchase.shared.products { (success, products, message) in
+    // any further action
+}
+```
+
+### Purchasing Products
+
+
+```swift
+AwesomePurchase.shared.purchaseProduct(withIdentifier: "PRODUCT IDENTIFIER") { (success, receipt, message) in
+    // any further action
+}
+```
+
+### Subscription Protocol
+
+In order to make the usability for Subscription simpler, you can take advantage of the Subscription Protocol. Ideally, you should create a helper class to handle the subscription and be responsible for any change in the subscripton state. 
+
+**Here's an example of the implementation:**
+
+```swift
+import AwesomePurchase
+import StoreKit
+
+enum SubscriptionId: String {
+    case monthly = "IDENTIFIER 1"
+    case yearly = "IDENTIFIER 2"
+}
+
+class AwesomePurchaseHelper: AwesomePurchaseSubscriptionProtocol {
+
+    static var shared = AwesomePurchaseHelper()
+
+    var products: [SKProduct] = []
+    var iapHelper: AwesomePurchaseStore?
+
+    var appStoreSecret: String {
+        return "yourAppStoreSecret"
+    }
+
+    static func start() {
+        AwesomePurchase.start(with: [SubscriptionId.monthly.rawValue, SubscriptionId.yearly.rawValue], isProduction: false)
+
+        shared.addPurchaseObservers()
+
+        shared.updateProducts { (products) in
+            shared.products = products
+        }
+    }
+
+    func receiptConfirmed(isValid: Bool) {
+        // take action
+    }
+    
+}
+```
 
 ## License
 
