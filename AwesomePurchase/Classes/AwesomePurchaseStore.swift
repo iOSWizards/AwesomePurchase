@@ -89,12 +89,15 @@ extension AwesomePurchaseStore {
         return purchasedProductIdentifiers.contains(productIdentifier)
     }
     
-    public class func canMakePayments() -> Bool {
-        return SKPaymentQueue.canMakePayments()
-    }
-    
     public func restorePurchases() {
+        guard SKPaymentQueue.canMakePayments() else {
+            return
+        }
+        
+        SKPaymentQueue.default().add(self)
         SKPaymentQueue.default().restoreCompletedTransactions()
+        
+        print("AwesomePurchase restoring purchases...")
     }
 }
 
