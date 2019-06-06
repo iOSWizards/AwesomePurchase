@@ -61,8 +61,10 @@ extension AwesomePurchaseSubscriptionProtocol {
         }
     }
     
-    public func restorePurchases() {
-        AwesomePurchase.shared.store?.restorePurchases()
+    public func restorePurchases(response: @escaping (Bool, String?, String?) -> Void) {
+        AwesomePurchase.shared.store?.restorePurchases(completion: { (success, receipt, message) in
+            response(success, receipt, message)
+        })
     }
     
     public func confirmReceipt(receipt: String?, completion: @escaping (Bool) -> Void) {

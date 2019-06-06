@@ -89,7 +89,9 @@ extension AwesomePurchaseStore {
         return purchasedProductIdentifiers.contains(productIdentifier)
     }
     
-    public func restorePurchases() {
+    public func restorePurchases(completion:@escaping ProductPurchasedCompletionHandler) {
+        self.productPurchasedCompletionHandler = completion
+        
         guard SKPaymentQueue.canMakePayments() else {
             return
         }
