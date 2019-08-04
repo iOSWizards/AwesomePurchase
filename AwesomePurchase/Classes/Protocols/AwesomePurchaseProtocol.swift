@@ -76,6 +76,7 @@ extension AwesomePurchaseSubscriptionProtocol {
             return UserDefaults.standard.bool(forKey: "isSubscribed")
         }
         set {
+            guard newValue != isSubscribed else { return }
             UserDefaults.standard.set(newValue, forKey: "isSubscribed")
             NotificationCenter.default.post(name: AwesomePurchaseNotification.updatedSubscriptionStatus.notification, object: newValue)
             print("Subscription status updated: \(newValue)")
