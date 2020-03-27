@@ -90,11 +90,12 @@ extension AwesomePurchaseStore {
     }
     
     public func restorePurchases(completion:@escaping ProductPurchasedCompletionHandler) {
-        self.productPurchasedCompletionHandler = completion
-        
         guard SKPaymentQueue.canMakePayments() else {
+             completion(false, nil, nil)
             return
         }
+
+        productPurchasedCompletionHandler = completion
         
         SKPaymentQueue.default().add(self)
         SKPaymentQueue.default().restoreCompletedTransactions()
@@ -106,6 +107,11 @@ extension AwesomePurchaseStore {
 // MARK: - SKProductsRequestDelegate
 
 extension AwesomePurchaseStore: SKProductsRequestDelegate {
+    
+    public func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+            productPurchasedCompletionHandler?(false, nil, error.localizedDescription)
+            clearPurchaseAndHandler()
+        }
     
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         let products = response.products
@@ -180,7 +186,6 @@ extension AwesomePurchaseStore: SKPaymentTransactionObserver {
         if let receiptURL = Bundle.main.appStoreReceiptURL {
             if let receipt = NSData(contentsOf: receiptURL) {
                 let jsonObjectString = receipt.base64EncodedString(options: .init(rawValue: 0))
-                //print("Receipt [\(jsonObjectString)]")
                 
                 NotificationCenter.default.post(name: AwesomePurchaseNotification.purchased.notification, object: jsonObjectString)
                 
